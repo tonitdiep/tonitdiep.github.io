@@ -12,7 +12,7 @@ In this CLI project, I am accessing the url’s data from an API, to build the c
 
 I decided to only focus on the elements of: name (the bike stations in address form); empty_slots (parking spots available); and free_bikes (the availability of bikes), all based on the chosen and/or current location. Both empty_slots and free_bikes are integers, so I converted the them into strings, using: **.to_s** in `display_station_details(stations`) method.
 
-Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API? To access an "array_of_stations", at indexed range [0..100], iterating by the each method within the do/end block, with “station_hash” between the pipes, ||, like so:
+Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API?  By setting the "array_of_stations", indexed [0..100] range, iterating by the each method within the do/end block, with “station_hash” between the pipes, ||, like so:
 
 `	array_of_stations[0..100].each do |station_hash|`
 
