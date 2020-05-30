@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Project: Biking-Inspired  "
-date:       2020-05-30 10:03:50 +0000
+date:       2020-05-30 06:03:51 -0400
 permalink:  cli_project_biking-inspired
 ---
 
@@ -13,6 +13,7 @@ In this CLI project, I am accessing the url’s data from an API, to build the c
 I decided to only focus on the elements of: name (the bike stations in address form); empty_slots (parking spots available); and free_bikes (the availability of bikes), all based on the chosen and/or current location. Both empty_slots and free_bikes are integers, so I converted the them into strings, using: **.to_s** in `display_station_details(stations`) method.
 
 Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API? To access an array of stations, at indexed range [0..100], with iteration in the each method within the do/end block, with *“stationhash*” as my placeholder, between the pipes, || to indicate the purpose of this instance method.
+
 `	array_of_stations[0..100].each do |station_hash|`
 
 Learning to operate from a test-driven development, by graciously plugging in **‘binding .pry’**, between the lines of codes and their respective blocks, to check for errors and reveal inputs and outputs, all in the grandness to zero errors, with an operating CLI. Learning about the user’s input and output, in alignment with the data, also assists in the validation and invalidation of the return values from the user’s experiences. This became super important in  `“ask_user_for_bike_choice”` method, involving the until loop, that keeps on looping, until the user’s reached a valid selection. The invalid selection, prompts that user’s attention of the invalidation, along with the specific range of selection, before the user decides that it’s done.
