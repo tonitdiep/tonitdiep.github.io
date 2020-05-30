@@ -10,7 +10,7 @@ permalink:  cli_project_biking-inspired
 
 In this CLI project, I am accessing the url’s data from an API, to build the class API. With such data, about biking with Citi Bikes in New York City, that drives the user’s experiences with the application.  To unpack the data types I am working with from the API, that I parsed with JSON, to determine my first variable called `“array_of_stations” =  hash[“network”][“stations”]`. 
 
-I decided to only focus on the elements of: name (the bike stations in address form); empty_slots (parking spots available); and free_bikes (the availability of bikes), all based on the chosen and/or current location. Both empty_slots and free_bikes are integers, so I converted the them into strings, using: **.to_s** in `display_station_details(stations`) method.
+I decided to only focus on the elements of: *name* (the bike stations in address form); *emptyslots* (parking spots available); and *freebikes* (the availability of bikes), all based on the chosen or current location. Both empty_slots and free_bikes are integers, so I converted the them into strings, using: **.to_s** in `display_station_details(stations`) method.
 
 Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API?  By setting the "array_of_stations", indexed [0..100] range, iterating by the each method within the do/end block, with “station_hash” between the pipes.
 
