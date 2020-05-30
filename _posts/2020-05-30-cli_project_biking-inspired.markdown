@@ -12,7 +12,7 @@ In this CLI project, I am accessing the url’s data from an API, to build the c
 
 I decided to only focus on the elements of: name (the bike stations in address form); empty_slots (parking spots available); and free_bikes (the availability of bikes), all based on the chosen and/or current location. Both empty_slots and free_bikes are integers, so I converted the them into strings, using: **.to_s** in `display_station_details(stations`) method.
 
-Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API? To access an array of stations, at indexed range [0..100], with iteration in the each method within the do/end block, with *“stationhash*” as my placeholder, between the pipes, || to indicate the purpose of this instance method.
+Next, I determined a specific range of stations to build my CLI from, for a more focused project, despite the growing indexes of bikes’ stations.  How did I do this in class API? To access an "array_of_stations", at indexed range [0..100], iterating by the each method within the do/end block, with “station_hash” between the pipes, ||, like so:
 
 `	array_of_stations[0..100].each do |station_hash|`
 
@@ -26,7 +26,3 @@ For fortification purposes, I put a timer to update and push my work to GitHub f
 1. “git push”
 
 Most importantly, this is my first development project at Flatiron, from the culmination of about three week(ish) of coding and hard-learning. I am super thrilled to continue cultivating my knowledge and practice in software engineering.  My last biking experience was in California.  Eventually, I will manifest my first biking experience in NYC, sometime this year, or 2021.  With quarantining since late March 2020, I am missing the outdoors and sunshine in this wild normal..until then, happy coding, wherever we are.
-
-
-
-
