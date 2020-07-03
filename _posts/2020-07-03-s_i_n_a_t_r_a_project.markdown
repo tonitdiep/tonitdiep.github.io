@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "S I N A T R A Project"
-date:       2020-07-03 04:22:06 +0000
+date:       2020-07-03 00:22:07 -0400
 permalink:  s_i_n_a_t_r_a_project
 ---
 
@@ -43,7 +43,6 @@ Back to the “helpers method” first plugged into the application_controller.r
 
 From this bird’s-eye view: the user’s session with their login or signup credentials, is given/access through enabling and setting the session_secret, this process is fortified with ENV[‘SESSION_SECRET’] until they press the “log out” button to end their webapp session. In the models/user.rb, the User’s class contains the “has_secure_password” to “authenticate” passwords and encrypt (install the BCrypt gem). HERE, unique validations are done to when creating that username, along with the email, upon a new user sign up.
 
-<img src="https://drive.google.com/file/d/1gN4tegSzVRYlRvmdt2hUFEwryBmsu-RA/view?usp=sharing" alt="Models: user.rb and product.rb">
 
 Furthermore, getting the logic behind the RESTful routes appropriately to create, read, update and delete, truly locked in the has_many and belongs_to relationships between a user and their products. Then the rest of the logic into the “redirects” from adding a new product, logging in and out to signing up and viewing the index of products makes sense. Again, a user has_many products, while products belongs_to a user. This is seen on the aspect if the user would reorder such products, so this attribute, set to a boolean (false/true). From here, the buttons I created for the users are “yes” for true and “no” false, in the backend (w/ the booleans) and the “yes/no” at the client user side (frontend). 
 
