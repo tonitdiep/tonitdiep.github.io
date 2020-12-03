@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "S i n a t r a - Blog App"
-date:       2020-12-03 09:39:21 +0000
+date:       2020-12-03 04:39:22 -0500
 permalink:  s_i_n_a_t_r_a_-_blog_app
 ---
 
@@ -55,7 +55,7 @@ From the get '/' root is displayed from views/welcome.erb page taking us onto th
 ```
 Once the user clicked the [Signup] link we are then taken to the post '/signup' route (from the controllers) to instantiate this new user signup to also pulls the form field inputs from the views/users/signup.erb for the user on the web browser perspective to enter their info (username and
 
-```     user = User.new(username: params[:username], password: params[:password])``` password) 
+```     user = User.new(username: params[:username], password: params[:password])```
 
 
 In the web browswer perspective, between the signup.erb and  the users_controller.rb, also goes through the conditional statements and use of params to instantiate a new user, first before saving it to the database.
