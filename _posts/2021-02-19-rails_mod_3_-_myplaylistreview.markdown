@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails MOD 3 - MyPlaylistReview"
-date:       2021-02-19 20:21:12 +0000
+date:       2021-02-19 15:21:13 -0500
 permalink:  rails_mod_3_-_myplaylistreview
 ---
 
